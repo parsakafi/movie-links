@@ -6,7 +6,7 @@
     "applications": {
         "gecko": {
             "id": "movielinks@parsa.ws",
-            "strict_min_version": "53.0"
+            "strict_min_version": "57.0"
         }
     },
     "data": {

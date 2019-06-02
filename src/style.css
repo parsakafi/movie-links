@@ -1,0 +1,60 @@
+html, body {
+    width: 500px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#popup-content {
+    max-width: 100%;
+}
+
+.no-links {
+    padding: 15px;
+}
+
+strong {
+    display: block;
+    background-color: rgb(17, 134, 212);
+    color: #fff;
+    font-size: 1.3em;
+    padding: 5px 5px 5px 10px;
+    margin: 15px 0 10px 0;
+}
+
+strong:first-child {
+    margin-top: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul > li {
+    margin: 0 5px 5px 10px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: rgb(17, 134, 212);
+    text-decoration: underline;
+}
+
+a:visited{
+    color: rgb(16, 161, 161);
+}
+
+fieldset{
+    border: none;
+    display: inline-block;
+}

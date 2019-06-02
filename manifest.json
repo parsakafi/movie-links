@@ -1,0 +1,53 @@
+{
+    "manifest_version": 2,
+    "name": "Movie Links",
+    "version": "1.0",
+    "description": "Display all available movie download links.",
+    "applications": {
+        "gecko": {
+            "id": "movielinks@parsa.ws",
+            "strict_min_version": "53.0"
+        }
+    },
+    "data": {
+        "displayFileSize": "Display File Size Option"
+    },
+    "icons": {
+        "32": "assets/icon-32.png",
+        "48": "assets/icon-48.png",
+        "96": "assets/icon-96.png" 
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content-script/content-script.js"
+            ]
+        } 
+    ],
+    "permissions": [
+        "<all_urls>",
+        "activeTab",
+        "tabs",
+        "storage"
+    ],
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": "assets/icon-32.png",
+        "theme_icons": [
+            {
+                "light": "assets/icon-32-light.png",
+                "dark": "assets/icon-32.png",
+                "size": 32
+            }
+        ],
+        "default_popup": "src/popup.html",
+        "default_title": "Extract Movie Links"
+    },
+    "options_ui": {
+        "page": "src/options.html",
+        "browser_style": true
+    }
+}

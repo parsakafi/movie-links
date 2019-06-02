@@ -44,7 +44,7 @@
             }
         ],
         "default_popup": "src/popup.html",
-        "default_title": "Extract Movie Links"
+        "default_title": "Movie Links"
     },
     "options_ui": {
         "page": "src/options.html",
